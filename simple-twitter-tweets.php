@@ -4,7 +4,7 @@ Plugin Name: Simple Twitter Tweets
 Plugin URI: http://www.planet-interactive.co.uk/simple-twitter-tweets
 Description: Display last x number tweets from Twitter API stream, store locally in database to present past tweets when failure to access Twitters restrictive API occurs
 Author: Ashley Sheinwald
-Version: 2.0
+Version: 2.1
 Author URI: http://www.planet-interactive.co.uk/
 */
 
@@ -128,7 +128,7 @@ class PI_SimpleTwitterTweets extends WP_Widget{
 			, 'timeRef'				=> false // false = use old full hour ref, true if selected will use hour ref as h (twitter style)
 			, 'timeAgo'				=> true // true = show ago, false will turn it off
 			// Intents
-			, 'twitterIntents'		=> true // true = Default: show Twitter Intents
+			, 'twitterIntents'		=> false // true = Default: show Twitter Intents
 			, 'twitterIntentsText'	=> false // false = Default: Show text - activate to turn off text display and use icons only
 			, 'intentColor'			=> "#999999" // Default colour, light grey
 			// Avatar
